@@ -1,11 +1,11 @@
 import deepFreeze from 'deep-freeze'
 import counterReducer from './reducer'
 
-describe('unicafe reducer', () => {
+describe('studytracker reducer', () => {
   const initialState = {
-    good: 0,
-    ok: 0,
-    bad: 0
+    yeah: 0,
+    kinda: 0,
+    nah: 0
   }
 
   test('should return a proper initial state when called with undefined state', () => {
@@ -18,18 +18,18 @@ describe('unicafe reducer', () => {
     expect(newState).toEqual(initialState)
   })
 
-  test('good is incremented', () => {
+  test('yeah is incremented', () => {
     const action = {
-      type: 'GOOD'
+      type: 'YEAH'
     }
     const state = initialState
 
     deepFreeze(state)
     const newState = counterReducer(state, action)
     expect(newState).toEqual({
-      good: 1,
-      ok: 0,
-      bad: 0
+      yeah: 1,
+      kinda: 0,
+      nah: 0
     })
   })
 })
