@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux'
 
 const App = () => {
-  const anecdotes = useSelector(state => state)
+  const jokes = useSelector(state => state)
   const dispatch = useDispatch()
 
   const vote = (id) => {
@@ -10,15 +10,15 @@ const App = () => {
 
   return (
     <div>
-      <h2>Anecdotes</h2>
-      {anecdotes.map(anecdote =>
-        <div key={anecdote.id}>
+      <h2>Jokes</h2>
+      {jokes.map(joke =>
+        <div key={joke.id}>
           <div>
-            {anecdote.content}
+            {joke.content}
           </div>
           <div>
-            has {anecdote.votes}
-            <button onClick={() => vote(anecdote.id)}>vote</button>
+            has {joke.votes}
+            <button onClick={() => vote(joke.id)}>vote</button>
           </div>
         </div>
       )}
