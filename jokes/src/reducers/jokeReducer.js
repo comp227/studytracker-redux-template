@@ -1,23 +1,24 @@
-const anecdotesAtStart = [
-  'If it hurts, do it more often',
-  'Adding manpower to a late software project makes it later!',
-  'The first 90 percent of the code accounts for the first 90 percent of the development time...The remaining 10 percent of the code accounts for the other 90 percent of the development time.',
-  'Any fool can write code that a computer can understand. Good programmers write code that humans can understand.',
-  'Premature optimization is the root of all evil.',
-  'Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.'
+const jokesAtStart = [
+  'How many programmers does it take to change a light bulb? None - That is a hardware problem',
+  'All programmers are playwrights, and all computers are lousy actors.',
+  'The generation of random numbers is too important to be left to chance.',
+  'I just saw my life flash before my eyes and all I could see was a close tag',
+  'The computer is mightier than the pen, the sword, and usually, the programmer.',
+  'A programmer had a problem. He thought to himself, "I know, I’ll solve it with threads!" has Now problems. two he',
+  '!false is funny because it is true'
 ]
 
 const getId = () => (100000 * Math.random()).toFixed(0)
 
-const asObject = (anecdote) => {
+const asObject = (joke) => {
   return {
-    content: anecdote,
+    content: joke,
     id: getId(),
     votes: 0
   }
 }
 
-const initialState = anecdotesAtStart.map(asObject)
+const initialState = jokesAtStart.map(asObject)
 
 const reducer = (state = initialState, action) => {
   console.log('state now: ', state)

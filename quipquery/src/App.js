@@ -3,7 +3,7 @@ import Notification from './components/Notification'
 
 const App = () => {
 
-  const handleVote = (anecdote) => {
+  const handleVote = (joke) => {
     console.log('vote')
   }
 
@@ -17,7 +17,7 @@ const App = () => {
 
   return (
     <div>
-      <h3>Anecdote app</h3>
+      <h3>Joke app</h3>
 
       <Notification />
       <JokeForm />

@@ -1,5 +1,5 @@
 {
-  "name": "query-anecdotes",
+  "name": "quip-query",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

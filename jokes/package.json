@@ -1,5 +1,5 @@
 {
-  "name": "redux-anecdotes",
+  "name": "redux-jokes",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
