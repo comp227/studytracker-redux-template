@@ -30,12 +30,6 @@
     "jest": "^29.6.3",
     "vite": "^4.4.5"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
   "browserslist": {
     "production": [
       ">0.2%",
